@@ -92,36 +92,13 @@ client.distube.on("addSong", (queue, song) => {
   });
 });
 //Distube playSong Komutu
-client.distube.on("playSong", (queue, song, nowTrack) => {
-  var newQueue = client.distube.getQueue(queue.id);
-  const embed = new EmbedBuilder()
-    .setTitle(
-      ":musical_note: Builder| Şarkı Adı",
-      `\n**[${song.name}](${song.url})**\n`
-    )
-    .setImage(song.thumbnail)
-    .addFields(
-      { name: `:YouTube: | Şarkı Kanalı`, inline: true },
-      { name: `\n**[${song.uploader.name}](${song.uploader.url})**\n`, inline: true, },
-      { name: `:timer: | Şarkı Süresi`, value: `\n**${song.formattedDuration}**\n`, inline: true, },
-      { name: `:ses: | Ses Seviyesi`, value: `%${newQueue.volume}`, inline: true, })
-    .setColor("Aqua");
-  setTimeout(() => {
-    queue.textChannel.send({ embeds: [embed] });
-  }, 2000);
-});
-//Distube finish Komutu
-client.distube
-  .on("finish", (queue) => {
-    const embed = new EmbedBuilder()
-      .setDescription(
-        `
-<a:destroyer:971145379527680040> | Tüm çalma listesi bitti, sanırım biraz daha müzik dinlemek size iyi gelebilir. <:kedyuzgun:969344668137582643>
-[Komutları sınırlandırmak yerine şuraya bir destek linki bırakıyorum](https://top.gg/bot/882730079594086440/vote)
-`)
-      .setColor("AQUA");
-    queue.textChannel.send({ embeds: [embed] });
-  })
+client.distube.on('playSong', (queue, song) =>
+		queue.textChannel.send({
+			embeds: [new EmbedBuilder().setColor('LuminousVividPink')
+				.setDescription(`🎶 | Playing \`${song.name}\` - \`${song.formattedDuration}\`\nRequested by: ${song.user
+				}\n${status(queue)}`)],
+		}),
+	)
   //
   .on("initQueue", (queue) => {
     queue.volume = 125;
