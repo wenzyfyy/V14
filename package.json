@@ -27,7 +27,6 @@
     "sodium": "^3.0.2",
     "libsodium-wrappers": "^0.7.11",
     "tweetnacl": "^1.0.3",
-    "ffmpeg": "^0.0.4",
     "@discordjs/voice": "^0.15.0"
   },
   "engines": {
