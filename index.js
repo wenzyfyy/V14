@@ -43,7 +43,6 @@ client.distube = new DisTube(client, {
         clientSecret: "88ba1be765944535878fc5cd892a9591",
       },
     }),
-    new YtDlpPlugin(),
   ],
 });
 //
