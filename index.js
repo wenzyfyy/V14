@@ -96,7 +96,7 @@ client.distube.on('playSong', (queue, song) =>
 		queue.textChannel.send({
 			embeds: [new EmbedBuilder().setColor('LuminousVividPink')
 				.setDescription(`🎶 | Playing \`${song.name}\` - \`${song.formattedDuration}\`\nRequested by: ${song.user
-				}\n${status(queue)}`)],
+				}\n${(queue)}`)],
 		}),
 	)
   //
