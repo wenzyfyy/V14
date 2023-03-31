@@ -10,11 +10,18 @@
   "author": "InFlames#2005",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/rest": "^0.4.1",
+    "@discordjs/rest": "^1.6.0",
     "dblapi.js": "^2.4.1",
-    "discord.js": "^14.0.1",
-    "inflames.db": "^4.1.1",
+    "discord.js": "^14.8.0",
+    "inflames.db": "^4.3.3",
     "moment": "^2.29.4",
-    "ms": "^2.1.3"
+    "ms": "^2.1.3",
+    "distube": "^4.0.4",
+    "@distube/soundcloud": "^1.3.0",
+    "@distube/spotify": "^1.5.1",
+    "@distube/yt-dlp": "^1.1.3"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }

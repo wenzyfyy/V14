@@ -1,6 +1,6 @@
 {
-    "prefix": "Prefix",
-    "botid": "Bot Id (slash commandlar için şart)",
-    "token": "Bot Tokeni",
-    "topgg": "Topgg Tokeni (Botunuz topgg onaylı değilse "topgg": false giriniz.)"
+    "prefix": "r!",
+    "botid": "974654488520577045",
+    "token": "OTc0NjU0NDg4NTIwNTc3MDQ1.Gl92ZD.4IURW-VfSt6Clut1m7IqHLPTAMSlJu7icHwZUw",
+    "topgg": false
 }
