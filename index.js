@@ -32,7 +32,6 @@ client.distube = new DisTube(client, {
   leaveOnEmpty: false,
   emptyCooldown: 0,
   leaveOnFinish: true,
-  updateYouTubeDL: true,
   plugins: [
     new YtDlpPlugin({ update: false }),
     new SoundCloudPlugin(),
